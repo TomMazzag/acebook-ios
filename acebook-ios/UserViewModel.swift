@@ -32,7 +32,9 @@ class UsersViewModel: ObservableObject {
             return "No user"
         }
         
-        guard let api = ProcessInfo.processInfo.environment["API_URL"] else { return "No API URL" }
+        //ProcessInfo.processInfo.environment["API_URL"] else { return "No API URL" }
+        
+        let api = API_URL 
         
         guard let url = URL(string: "\(String(api))/users/search/\(user)") else { return "Couldnt get url" }
 

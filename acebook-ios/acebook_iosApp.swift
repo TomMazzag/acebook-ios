@@ -11,7 +11,7 @@ import SwiftUI
 struct acebook_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            UserView()
+            Main()
         }
     }
 }

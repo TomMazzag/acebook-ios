@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D3169A642B7E6B8A009DC88E /* acebook_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A632B7E6B8A009DC88E /* acebook_iosApp.swift */; };
-		D3169A662B7E6B8A009DC88E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A652B7E6B8A009DC88E /* ContentView.swift */; };
 		D3169A682B7E6B8D009DC88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3169A672B7E6B8D009DC88E /* Assets.xcassets */; };
 		D3169A6B2B7E6B8D009DC88E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3169A6A2B7E6B8D009DC88E /* Preview Assets.xcassets */; };
 		D3169A752B7E6B8D009DC88E /* acebook_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A742B7E6B8D009DC88E /* acebook_iosTests.swift */; };
@@ -16,6 +15,12 @@
 		D3169A812B7E6B8D009DC88E /* acebook_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A802B7E6B8D009DC88E /* acebook_iosUITestsLaunchTests.swift */; };
 		D3169A8E2B7E6BEE009DC88E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A8D2B7E6BEE009DC88E /* UserViewModel.swift */; };
 		D3169A902B7E6C1C009DC88E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A8F2B7E6C1C009DC88E /* UserView.swift */; };
+		D3169A922B7E7C00009DC88E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A912B7E7C00009DC88E /* PostView.swift */; };
+		D3169A942B7F6D15009DC88E /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A932B7F6D15009DC88E /* secrets.swift */; };
+		D3169A962B7F6D33009DC88E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D3169A952B7F6D33009DC88E /* .gitignore */; };
+		D3169A982B7F774D009DC88E /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A972B7F774D009DC88E /* PostViewModel.swift */; };
+		D3169A9A2B7F8C2D009DC88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */; };
+		D3E294022B7F97B90070ED2D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E294012B7F97B90070ED2D /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 /* Begin PBXFileReference section */
 		D3169A602B7E6B8A009DC88E /* acebook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "acebook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3169A632B7E6B8A009DC88E /* acebook_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acebook_iosApp.swift; sourceTree = "<group>"; };
-		D3169A652B7E6B8A009DC88E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3169A672B7E6B8D009DC88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3169A6A2B7E6B8D009DC88E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3169A702B7E6B8D009DC88E /* acebook-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "acebook-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,12 @@
 		D3169A802B7E6B8D009DC88E /* acebook_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acebook_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3169A8D2B7E6BEE009DC88E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D3169A8F2B7E6C1C009DC88E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D3169A912B7E7C00009DC88E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		D3169A932B7F6D15009DC88E /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		D3169A952B7F6D33009DC88E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D3169A972B7F774D009DC88E /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3E294012B7F97B90070ED2D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			isa = PBXGroup;
 			children = (
 				D3169A632B7E6B8A009DC88E /* acebook_iosApp.swift */,
-				D3169A652B7E6B8A009DC88E /* ContentView.swift */,
+				D3E294012B7F97B90070ED2D /* Main.swift */,
 				D3169A8D2B7E6BEE009DC88E /* UserViewModel.swift */,
 				D3169A8F2B7E6C1C009DC88E /* UserView.swift */,
+				D3169A972B7F774D009DC88E /* PostViewModel.swift */,
+				D3169A912B7E7C00009DC88E /* PostView.swift */,
+				D3169A932B7F6D15009DC88E /* secrets.swift */,
 				D3169A672B7E6B8D009DC88E /* Assets.xcassets */,
+				D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */,
+				D3169A952B7F6D33009DC88E /* .gitignore */,
 				D3169A692B7E6B8D009DC88E /* Preview Content */,
 			);
 			path = "acebook-ios";
@@ -238,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3169A6B2B7E6B8D009DC88E /* Preview Assets.xcassets in Resources */,
+				D3169A9A2B7F8C2D009DC88E /* LaunchScreen.storyboard in Resources */,
+				D3169A962B7F6D33009DC88E /* .gitignore in Resources */,
 				D3169A682B7E6B8D009DC88E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3169A662B7E6B8A009DC88E /* ContentView.swift in Sources */,
+				D3169A982B7F774D009DC88E /* PostViewModel.swift in Sources */,
 				D3169A8E2B7E6BEE009DC88E /* UserViewModel.swift in Sources */,
 				D3169A642B7E6B8A009DC88E /* acebook_iosApp.swift in Sources */,
+				D3169A922B7E7C00009DC88E /* PostView.swift in Sources */,
 				D3169A902B7E6C1C009DC88E /* UserView.swift in Sources */,
+				D3E294022B7F97B90070ED2D /* Main.swift in Sources */,
+				D3169A942B7F6D15009DC88E /* secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +453,15 @@
 				DEVELOPMENT_TEAM = RP9Z87U998;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acebook;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,11 +486,15 @@
 				DEVELOPMENT_TEAM = RP9Z87U998;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Acebook;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
