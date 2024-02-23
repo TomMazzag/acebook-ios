@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct acebook_iosApp: App {
+    
+    @State private var isLoggedIn = false
+    
     var body: some Scene {
         WindowGroup {
-            Main()
+            NavigationView {
+                if isLoggedIn {
+                    Main()
+                } else {
+                    LoginView(isLoggedIn: $isLoggedIn)
+                }
+            }
         }
     }
 }

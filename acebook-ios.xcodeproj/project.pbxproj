@@ -20,6 +20,12 @@
 		D3169A962B7F6D33009DC88E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D3169A952B7F6D33009DC88E /* .gitignore */; };
 		D3169A982B7F774D009DC88E /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3169A972B7F774D009DC88E /* PostViewModel.swift */; };
 		D3169A9A2B7F8C2D009DC88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */; };
+		D3B92BB32B89190200355B1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BB22B89190200355B1E /* User.swift */; };
+		D3B92BB52B89191F00355B1E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BB42B89191F00355B1E /* Post.swift */; };
+		D3B92BB72B89198E00355B1E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BB62B89198E00355B1E /* LoginView.swift */; };
+		D3B92BB92B89199700355B1E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BB82B89199700355B1E /* SignUpView.swift */; };
+		D3B92BBB2B89240F00355B1E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BBA2B89240F00355B1E /* Auth.swift */; };
+		D3B92BBD2B892FE700355B1E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B92BBC2B892FE700355B1E /* AccountView.swift */; };
 		D3E294022B7F97B90070ED2D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E294012B7F97B90070ED2D /* Main.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,12 @@
 		D3169A952B7F6D33009DC88E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D3169A972B7F774D009DC88E /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3B92BB22B89190200355B1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3B92BB42B89191F00355B1E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D3B92BB62B89198E00355B1E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D3B92BB82B89199700355B1E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D3B92BBA2B89240F00355B1E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D3B92BBC2B892FE700355B1E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		D3E294012B7F97B90070ED2D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,14 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				D3169A632B7E6B8A009DC88E /* acebook_iosApp.swift */,
-				D3E294012B7F97B90070ED2D /* Main.swift */,
-				D3169A8D2B7E6BEE009DC88E /* UserViewModel.swift */,
-				D3169A8F2B7E6C1C009DC88E /* UserView.swift */,
-				D3169A972B7F774D009DC88E /* PostViewModel.swift */,
-				D3169A912B7E7C00009DC88E /* PostView.swift */,
 				D3169A932B7F6D15009DC88E /* secrets.swift */,
+				D3B92BB12B8918C200355B1E /* Models */,
+				D3B92BB02B89189D00355B1E /* Services */,
+				D3B92BAF2B89187600355B1E /* Views */,
 				D3169A672B7E6B8D009DC88E /* Assets.xcassets */,
-				D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */,
 				D3169A952B7F6D33009DC88E /* .gitignore */,
 				D3169A692B7E6B8D009DC88E /* Preview Content */,
 			);
@@ -146,6 +155,39 @@
 				D3169A802B7E6B8D009DC88E /* acebook_iosUITestsLaunchTests.swift */,
 			);
 			path = "acebook-iosUITests";
+			sourceTree = "<group>";
+		};
+		D3B92BAF2B89187600355B1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3E294012B7F97B90070ED2D /* Main.swift */,
+				D3169A992B7F8C2D009DC88E /* LaunchScreen.storyboard */,
+				D3B92BB62B89198E00355B1E /* LoginView.swift */,
+				D3B92BB82B89199700355B1E /* SignUpView.swift */,
+				D3169A912B7E7C00009DC88E /* PostView.swift */,
+				D3169A8F2B7E6C1C009DC88E /* UserView.swift */,
+				D3B92BBC2B892FE700355B1E /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3B92BB02B89189D00355B1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3169A8D2B7E6BEE009DC88E /* UserViewModel.swift */,
+				D3169A972B7F774D009DC88E /* PostViewModel.swift */,
+				D3B92BBA2B89240F00355B1E /* Auth.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3B92BB12B8918C200355B1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3B92BB22B89190200355B1E /* User.swift */,
+				D3B92BB42B89191F00355B1E /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +326,15 @@
 				D3169A8E2B7E6BEE009DC88E /* UserViewModel.swift in Sources */,
 				D3169A642B7E6B8A009DC88E /* acebook_iosApp.swift in Sources */,
 				D3169A922B7E7C00009DC88E /* PostView.swift in Sources */,
+				D3B92BB32B89190200355B1E /* User.swift in Sources */,
+				D3B92BB92B89199700355B1E /* SignUpView.swift in Sources */,
 				D3169A902B7E6C1C009DC88E /* UserView.swift in Sources */,
+				D3B92BB52B89191F00355B1E /* Post.swift in Sources */,
 				D3E294022B7F97B90070ED2D /* Main.swift in Sources */,
+				D3B92BB72B89198E00355B1E /* LoginView.swift in Sources */,
 				D3169A942B7F6D15009DC88E /* secrets.swift in Sources */,
+				D3B92BBD2B892FE700355B1E /* AccountView.swift in Sources */,
+				D3B92BBB2B89240F00355B1E /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

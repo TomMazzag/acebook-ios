@@ -7,37 +7,18 @@
 
 import Foundation
 
-struct Post: Codable, Identifiable {
-    let id: String
-    let message: String
-    let full_name: String
-    let profile_pic: String
-    let created_at: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case id = "_id"
-        case message
-        case full_name
-        case profile_pic
-        case created_at = "createdAt"
-    }
-}
-
-struct PostResponse: Codable {
-    let posts: [Post]
-}
-
 class PostsViewModel: ObservableObject {
     @Published var postsList: [Post] = []
     
     func fetchPosts() -> String {
         guard let url = URL(string: "\(API_URL)/posts/all/5") else { return "Couldnt get url" }
         
-        let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVjZTI0NGU5YWYxMjQ5MmQzOGU0ZmEyIiwiaWF0IjoxNzA4MDgxMTk0LCJleHAiOjE3MDgxNjc1OTR9.XDNS0s_7oxdvjp1R0o7voFITUU8vEFr3XFUCwDpXH1s"
+        let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjViYTZmZmJlODA3YThiNDJhOGU1M2JjIiwiaWF0IjoxNzA4NzE3ODIyLCJleHAiOjE3MDg4MDQyMjJ9.zzaEEdtTILlbK5wwOWdkUjBmKkjNZfsnipXg-hDluSo"
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else { return }

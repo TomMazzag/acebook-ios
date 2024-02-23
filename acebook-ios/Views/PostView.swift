@@ -45,7 +45,7 @@ struct PostView: View {
                             VStack(alignment: .leading) {
                                 Text(post.full_name)
                                     .font(.title)
-                                Text(post.created_at)
+                                Text(post.formattedCreatedAt)
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
                             }
